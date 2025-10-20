@@ -1,0 +1,11 @@
+{
+  "block.veristicmushrooms.baybolete_block": "Block of Bay Bolete",
+
+  "item.veristicmushrooms.raw_baybolete": "Bay Bolete",
+  "item.veristicmushrooms.raw_chanterelle": "Chanterelle",
+  "item.veristicmushrooms.raw_deathcap": "Death Cap",
+
+  "item.veristicmushrooms.cooked_baybolete": "Bay Bolete (Cooked)",
+  "item.veristicmushrooms.cooked_chanterelle": "Chanterelle (Cooked)",
+  "item.veristicmushrooms.cooked_deathcap": "Death Cap (Cooked)"
+}

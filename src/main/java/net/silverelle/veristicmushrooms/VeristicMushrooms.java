@@ -1,6 +1,7 @@
 package net.silverelle.veristicmushrooms;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -13,6 +14,8 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.silverelle.veristicmushrooms.Item.ModItems;
+import net.silverelle.veristicmushrooms.block.ModBlocks;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -28,10 +31,12 @@ public class VeristicMushrooms
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
-
-
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
@@ -46,7 +51,21 @@ public class VeristicMushrooms
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS)
+        {
+            event.accept(ModItems.RAW_BAYBOLETE);
+            event.accept(ModItems.RAW_CHANTERELLE);
+            event.accept(ModItems.RAW_DEATHCAP);
 
+            event.accept(ModItems.COOKED_BAYBOLETE);
+            event.accept(ModItems.COOKED_CHANTERELLE);
+            event.accept(ModItems.COOKED_DEATHCAP);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
+        {
+            event.accept(ModBlocks.BAYBOLETE_BLOCK);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
