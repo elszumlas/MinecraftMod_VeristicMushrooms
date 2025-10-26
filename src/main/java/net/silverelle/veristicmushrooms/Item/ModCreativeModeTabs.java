@@ -21,10 +21,12 @@ public class ModCreativeModeTabs
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.MYCOLOGYBOOK.get());
 
+                        output.accept(ModItems.RAW_BROWNBUTTON.get());
                         output.accept(ModItems.RAW_BAYBOLETE.get());
                         output.accept(ModItems.RAW_CHANTERELLE.get());
                         output.accept(ModItems.RAW_DEATHCAP.get());
 
+                        output.accept(ModItems.COOKED_BROWNBUTTON.get());
                         output.accept(ModItems.COOKED_BAYBOLETE.get());
                         output.accept(ModItems.COOKED_CHANTERELLE.get());
                         output.accept(ModItems.COOKED_DEATHCAP.get());

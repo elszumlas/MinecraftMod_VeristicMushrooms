@@ -3,10 +3,12 @@
 
   "item.veristicmushrooms.mycologybook": "Mycology Book",
 
+  "item.veristicmushrooms.raw_brownbutton": "Brown Button",
   "item.veristicmushrooms.raw_baybolete": "Bay Bolete",
   "item.veristicmushrooms.raw_chanterelle": "Chanterelle",
   "item.veristicmushrooms.raw_deathcap": "Death Cap",
 
+  "item.veristicmushrooms.cooked_brownbutton": "Brown Button (Cooked)",
   "item.veristicmushrooms.cooked_baybolete": "Bay Bolete (Cooked)",
   "item.veristicmushrooms.cooked_chanterelle": "Chanterelle (Cooked)",
   "item.veristicmushrooms.cooked_deathcap": "Death Cap (Cooked)",
