@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "veristicmushrooms:raw_baybolete"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "veristicmushrooms:mycologybook"
+  }
+}

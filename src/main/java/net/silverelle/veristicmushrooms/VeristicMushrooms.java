@@ -14,6 +14,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.silverelle.veristicmushrooms.Item.ModCreativeModeTabs;
 import net.silverelle.veristicmushrooms.Item.ModItems;
 import net.silverelle.veristicmushrooms.block.ModBlocks;
 import org.slf4j.Logger;
@@ -34,6 +35,8 @@ public class VeristicMushrooms
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -53,18 +56,20 @@ public class VeristicMushrooms
     {
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS)
         {
-            event.accept(ModItems.RAW_BAYBOLETE);
-            event.accept(ModItems.RAW_CHANTERELLE);
-            event.accept(ModItems.RAW_DEATHCAP);
+            //event.accept(ModItems.MYCOLOGYBOOK);
 
-            event.accept(ModItems.COOKED_BAYBOLETE);
-            event.accept(ModItems.COOKED_CHANTERELLE);
-            event.accept(ModItems.COOKED_DEATHCAP);
+            //event.accept(ModItems.RAW_BAYBOLETE);
+            //event.accept(ModItems.RAW_CHANTERELLE);
+            //event.accept(ModItems.RAW_DEATHCAP);
+
+            //event.accept(ModItems.COOKED_BAYBOLETE);
+            //event.accept(ModItems.COOKED_CHANTERELLE);
+            //event.accept(ModItems.COOKED_DEATHCAP);
         }
 
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
         {
-            event.accept(ModBlocks.BAYBOLETE_BLOCK);
+            //event.accept(ModBlocks.BAYBOLETE_BLOCK);
         }
     }
 

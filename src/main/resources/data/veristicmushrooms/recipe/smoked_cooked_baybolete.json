@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "veristicmushrooms:raw_baybolete"
+  },
+  "result": {
+    "id": "veristicmushrooms:cooked_baybolete"
+  }
+}

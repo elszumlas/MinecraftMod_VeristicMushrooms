@@ -1,5 +1,7 @@
 package net.silverelle.veristicmushrooms.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.silverelle.veristicmushrooms.VeristicMushrooms;
 import net.silverelle.veristicmushrooms.Item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -21,8 +23,8 @@ public class ModBlocks
 
     // Add Blocks here
     public static final RegistryObject<Block> BAYBOLETE_BLOCK = registerBlock("baybolete_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1f).requiresCorrectToolForDrops().sound(SoundType.FUNGUS)));
+            () -> new DropExperienceBlock(UniformInt.of(1, 1), BlockBehaviour.Properties.of()
+                    .strength(0f).sound(SoundType.FUNGUS)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)

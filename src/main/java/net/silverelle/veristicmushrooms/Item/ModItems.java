@@ -12,6 +12,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, VeristicMushrooms.MOD_ID);
 
+    public static final RegistryObject<Item> MYCOLOGYBOOK = ITEMS.register("mycologybook", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_BAYBOLETE = ITEMS.register("raw_baybolete", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> COOKED_BAYBOLETE = ITEMS.register("cooked_baybolete", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_CHANTERELLE = ITEMS.register("raw_chanterelle", () -> new Item(new Item.Properties()));

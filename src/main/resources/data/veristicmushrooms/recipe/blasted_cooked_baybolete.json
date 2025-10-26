@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "baybolete",
+  "ingredient": {
+    "item": "veristicmushrooms:raw_baybolete"
+  },
+  "result": {
+    "id": "veristicmushrooms:cooked_baybolete"
+  }
+}
