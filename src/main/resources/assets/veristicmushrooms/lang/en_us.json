@@ -13,5 +13,18 @@
   "item.veristicmushrooms.cooked_chanterelle": "Chanterelle (Cooked)",
   "item.veristicmushrooms.cooked_deathcap": "Death Cap (Cooked)",
 
-  "block.veristicmushrooms.baybolete_block": "Block of Bay Bolete"
+  "block.veristicmushrooms.baybolete_block": "Block of Bay Bolete",
+
+  "tooltip.veristicmushrooms.shift_down": "Hold §eShift§r to examine",
+  "tooltip.veristicmushrooms.testmushroom_item": "Test tooltip",
+  "tooltip.veristicmushrooms.mycologybook": "Mycology tooltip",
+  "tooltip.veristicmushrooms.raw_brownbutton": "Raw Brownbutton tooltip",
+  "tooltip.veristicmushrooms.raw_baybolete": "Raw Baybolete tooltip",
+  "tooltip.veristicmushrooms.raw_chanterelle": "Raw Chanterelle tooltip",
+  "tooltip.veristicmushrooms.raw_deathcap": "Raw Deathcap tooltip",
+  "tooltip.veristicmushrooms.cooked_brownbutton": "Cooked Brownbutton tooltip",
+  "tooltip.veristicmushrooms.cooked_baybolete": "Cooked Baybolete tooltip",
+  "tooltip.veristicmushrooms.cooked_chanterelle": "Cooked Chanterelle tooltip",
+  "tooltip.veristicmushrooms.cooked_deathcap": "Cooked Deathcap tooltip",
+  "tooltip.veristicmushrooms.baybolete_block": "A plantable Baybolete."
 }

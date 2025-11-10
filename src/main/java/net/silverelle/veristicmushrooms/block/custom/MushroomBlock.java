@@ -1,7 +1,10 @@
 package net.silverelle.veristicmushrooms.block.custom;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
@@ -10,6 +13,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
+import java.awt.*;
+import java.util.List;
 import java.util.Optional;
 
 public class MushroomBlock extends Block {
@@ -36,5 +41,9 @@ public class MushroomBlock extends Block {
                 || belowState.is(Blocks.MOSS_BLOCK);
     }
 
-
+    @Override
+    public void appendHoverText(ItemStack pStack, Item.TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
+        pTooltipComponents.add(Component.translatable("tooltip.veristicmushrooms.baybolete_block"));
+        super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
+    }
 }

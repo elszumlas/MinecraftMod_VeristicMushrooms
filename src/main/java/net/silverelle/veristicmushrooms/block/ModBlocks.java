@@ -1,8 +1,11 @@
 package net.silverelle.veristicmushrooms.block;
 
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.silverelle.veristicmushrooms.VeristicMushrooms;
 import net.silverelle.veristicmushrooms.Item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -24,14 +27,9 @@ public class ModBlocks
             DeferredRegister.create(ForgeRegistries.BLOCKS, VeristicMushrooms.MOD_ID);
 
     // Add Blocks here
-    /*
-    public static final RegistryObject<Block> BAYBOLETE_BLOCK = registerBlock("baybolete_block",
-            () -> new DropExperienceBlock(UniformInt.of(1, 1), BlockBehaviour.Properties.of()
-                    .strength(0f).sound(SoundType.FUNGUS)));
-     */
-
     public static final RegistryObject<Block> BAYBOLETE_BLOCK = registerBlock("baybolete_block",
             () -> new MushroomBlock(BlockBehaviour.Properties.of().strength(0f).sound(SoundType.FUNGUS).noCollission()));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {
