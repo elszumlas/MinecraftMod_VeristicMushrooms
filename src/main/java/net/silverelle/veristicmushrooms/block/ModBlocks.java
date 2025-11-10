@@ -28,7 +28,7 @@ public class ModBlocks
 
     // Add Blocks here
     public static final RegistryObject<Block> BAYBOLETE_BLOCK = registerBlock("baybolete_block",
-            () -> new MushroomBlock(BlockBehaviour.Properties.of().strength(0f).sound(SoundType.FUNGUS).noCollission()));
+            () -> new MushroomBlock(BlockBehaviour.Properties.of().strength(0f).sound(SoundType.FUNGUS).noCollission().noOcclusion()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)

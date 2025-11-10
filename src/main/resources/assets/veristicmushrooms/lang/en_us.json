@@ -15,6 +15,9 @@
 
   "block.veristicmushrooms.baybolete_block": "Block of Bay Bolete",
 
+  "painting.veristicmushrooms.mycology_poster_32x16.title": "Mycology Poster",
+  "painting.veristicmushrooms.mycology_poster_32x16.author": "Silverelle",
+
   "tooltip.veristicmushrooms.shift_down": "Hold §eShift§r to examine",
   "tooltip.veristicmushrooms.testmushroom_item": "Test tooltip",
   "tooltip.veristicmushrooms.mycologybook": "Mycology tooltip",
